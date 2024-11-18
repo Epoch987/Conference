@@ -1,0 +1,66 @@
+/* Updated styles for banner and logo alignment */
+.banner {
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.banner-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* 白色背景 */
+    padding: 10px 20px;
+}
+
+.banner h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.logo-image {
+    max-height: 100px;
+    margin-left: auto;
+}
+
+.banner-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Banner styling for scrolling and responsiveness */
+.banner {
+    position: relative;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping for scrolling */
+}
+
+.banner-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: nowrap; /* Prevent wrapping */
+}
+
+.banner img {
+    max-width: 100%; /* Scale images within parent container */
+    height: auto; /* Maintain aspect ratio */
+    display: inline-block; /* Prevent block-level behavior */
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .banner {
+        height: auto; /* Allow auto adjustment for mobile height */
+    }
+    .banner img {
+        max-width: none; /* Allow full image to scroll horizontally */
+        width: 100vw; /* Adjust to the viewport width */
+    }
+}
